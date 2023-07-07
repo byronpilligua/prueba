@@ -51,6 +51,6 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker pull pillligua24/prueba:$NEW_VERSION
-        docker pull pillligua24/prueba:latest
+        docker push pillligua24/prueba:$NEW_VERSION
+        docker push pillligua24/prueba:latest
  
